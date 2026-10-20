@@ -46,18 +46,18 @@ In parallelo all'attività lavorativa dedico il tempo all'addestramento di model
 
 <div align="center">
 
-<img src="https://github-readme-stats.vercel.app/api/pin?username=MarcoValleCS&repo=gestionale&theme=gruvbox&hide_border=true" alt="Repository gestionale" width="49%" />
-<img src="https://github-readme-stats.vercel.app/api/pin?username=MarcoValleCS&repo=flight&theme=gruvbox&hide_border=true" alt="Repository flight" width="49%" />
+<img src="https://github-readme-stats.vercel.app/api/pin?username=MarcoValleCS&repo=gestionale&theme=gruvbox&hide_border=true&cache_seconds=3600" alt="Repository gestionale" width="49%" />
+<img src="https://github-readme-stats.vercel.app/api/pin?username=MarcoValleCS&repo=flight&theme=gruvbox&hide_border=true&cache_seconds=3600" alt="Repository flight" width="49%" />
 
 </div>
 
 ## Stack tecnologico
 
-**Dal codice pubblico** — volume effettivo per linguaggio sui repository pubblici (escluso il repository `flight`, che contiene circa 6 MB di report HTML generati):
+**Dal codice pubblico** — volume effettivo per linguaggio sui repository pubblici, calcolato da GitHub sui file effettivamente versionati:
 
 <div align="center">
 
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=MarcoValleCS&layout=compact&langs_count=8&exclude_repo=flight&theme=gruvbox&hide_border=true&disable_animations=true" alt="Linguaggi più usati" />
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=MarcoValleCS&layout=compact&langs_count=8&theme=gruvbox&hide_border=true&disable_animations=true&cache_seconds=3600" alt="Linguaggi più usati" />
 
 </div>
 
@@ -146,8 +146,8 @@ FatturaPA (FPR12) · SDI · PEC · REST · PWA
 
 <div align="center">
 
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=MarcoValleCS&theme=gruvbox" alt="Statistiche GitHub" />
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=MarcoValleCS&theme=gruvbox" alt="Quando scrivo codice" />
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=MarcoValleCS&theme=gruvbox&cache_seconds=3600" alt="Statistiche GitHub" />
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=MarcoValleCS&theme=gruvbox&cache_seconds=3600" alt="Quando scrivo codice" />
 
 </div>
 
