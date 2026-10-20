@@ -24,13 +24,15 @@ Laureato in **Informatica** all'Università di Milano-Bicocca nel 2025 con votaz
 
 Presso **Aquaforma S.r.l.** (Treviolo) gestisco l'infrastruttura IT e sviluppo il gestionale aziendale, oggi il sistema di gestione principale dell'azienda: anagrafiche, preventivi, ordini, magazzino, DDT e fatturazione elettronica verso lo SDI. Il sistema è in produzione su un VPS Linux con Docker Compose e dispone di oltre **600 test automatici**, eseguiti in CI ad ogni push.
 
-In parallelo all'attività lavorativa dedico il tempo all'addestramento di modelli di deep learning su **65 milioni di record ADS-B**, a un firmware **ESP32** per la misura della chimica dell'acqua di una piscina e a un'applicazione **Android** in Kotlin per il controllo dei relè.
+In parallelo all'attività lavorativa dedico il tempo alla ricerca applicata: modelli di deep learning per la previsione delle traiettorie aeree, addestrati su dati **OpenSky ADS-B** reali, un firmware **ESP32** per la misura della chimica dell'acqua di una piscina e un'applicazione **Android** in Kotlin per il controllo dei relè.
 
 | | |
 |---|---|
 | **Laurea** | 99/110 in Informatica — Università di Milano-Bicocca |
-| **Record elaborati** | oltre 65 milioni di record ADS-B, circa 15.000 voli al giorno |
-| **Errore di previsione** | 582 m (ADE), 30% in meno rispetto alla baseline cinematica |
+| **Record elaborati** | oltre 65 milioni di record ADS-B, fino a 180 giorni consecutivi di traffico reale |
+| **Errore di previsione** | **991,6 m** su un orizzonte di 5–300 s: migliore su tutti gli orizzonti fra **10 modelli** a confronto |
+| **Benchmark** | 5 modelli della letteratura reimplementati su dati e protocollo identici (ASCENT, Flow Matching, DDPM, Attention-LSTM, IMM) |
+| **Modello** | 1,28 M parametri, 80 epoche in circa 25 minuti su una singola GPU |
 | **Test automatici** | oltre 600, in esecuzione in CI ad ogni push |
 | **Lingue** | Italiano madrelingua, inglese B2 |
 
@@ -38,6 +40,7 @@ In parallelo all'attività lavorativa dedico il tempo all'addestramento di model
 
 | Progetto | Stack | Descrizione | Repository |
 |---|---|---|---|
+| **AeroTraj-Ultra** | PyTorch · OpenSky · NumPy | Modello **non autoregressivo** multi-orizzonte per la previsione della traiettoria aerea da 5 a 300 secondi, con un'unica passata in avanti e senza accumulo dell'errore. Ogni previsione è ancorata a un propagatore cinematico analitico sull'ellissoide WGS-84 e codificata in **Gray Code**. Include un **benchmark aperto**: dieci modelli della letteratura allenati e valutati sugli stessi dati con lo stesso protocollo. | [AeroTraj-Ultra](https://github.com/MarcoValleCS/AeroTraj-Ultra) |
 | **Gestionale aziendale** | Django · PostgreSQL · Docker | Il sistema con cui Aquaforma opera quotidianamente: preventivi, ordini, magazzino, DDT e fatturazione. Genera l'XML **FatturaPA (FPR12)** e lo trasmette allo **SDI** via PEC; espone inoltre un server MCP in sola lettura per l'integrazione con gli assistenti AI. | [gestionale](https://github.com/MarcoValleCS/gestionale) |
 | **FlightPREV** | PyTorch · pandas · NumPy | Modello Transformer addestrato su 65 milioni di record ADS-B per la previsione della traiettoria di un aereo da 10 a 120 secondi. Nato dalla tesi di laurea. | [flight](https://github.com/MarcoValleCS/flight) |
 | **Portfolio** | HTML · CSS · JavaScript | Il sito personale: nessun framework e nessuna build, HTML, CSS e JavaScript scritti a mano. | [sito](https://marcovallecs.github.io/) · [repository](https://github.com/MarcoValleCS/MarcoValleCS.github.io) |
@@ -46,8 +49,8 @@ In parallelo all'attività lavorativa dedico il tempo all'addestramento di model
 
 <div align="center">
 
+<img src="https://github-readme-stats.vercel.app/api/pin?username=MarcoValleCS&repo=AeroTraj-Ultra&theme=gruvbox&hide_border=true&cache_seconds=3600" alt="Repository AeroTraj-Ultra" width="49%" />
 <img src="https://github-readme-stats.vercel.app/api/pin?username=MarcoValleCS&repo=gestionale&theme=gruvbox&hide_border=true&cache_seconds=3600" alt="Repository gestionale" width="49%" />
-<img src="https://github-readme-stats.vercel.app/api/pin?username=MarcoValleCS&repo=flight&theme=gruvbox&hide_border=true&cache_seconds=3600" alt="Repository flight" width="49%" />
 
 </div>
 
@@ -88,6 +91,7 @@ Java         ███░░░░░░░░░░░░░░░░░░░�
 [![pandas](https://img.shields.io/badge/pandas-150458?style=flat-square&logo=pandas&logoColor=white)](https://pandas.pydata.org/)
 [![NumPy](https://img.shields.io/badge/NumPy-013243?style=flat-square&logo=numpy&logoColor=white)](https://numpy.org/)
 [![Matplotlib](https://img.shields.io/badge/Matplotlib-3F4F6?style=flat-square&logo=matplotlib&logoColor=white)](https://matplotlib.org/)
+[![OpenSky](https://img.shields.io/badge/OpenSky-ADS-B%20data-0A66C2?style=flat-square)](https://opensky-network.org/)
 
 **DevOps**
 [![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)](https://www.docker.com/)
@@ -115,7 +119,7 @@ FatturaPA (FPR12) · SDI · PEC · REST · PWA
 
 - **Problemi concreti.** Preferisco un progetto completo e in produzione a più progetti incompiuti.
 - **Test automatizzati fin dall'inizio.** Il gestionale dispone di oltre 600 test in CI: ogni push viene verificato e ogni rilascio resta reversibile.
-- **Dati reali.** L'addestramento su 65 milioni di record ADS-B, anziché su dataset di esempio, garantisce che i risultati misurati siano significativi.
+- **Dati reali e protocollo comune.** L'addestramento su traffico reale OpenSky (fino a 180 giorni consecutivi) e il confronto fra modelli su dati e protocollo identici rendono i risultati verificabili da terzi.
 - **Documentazione contestuale.** Il codice di dominio viene spiegato meglio di una documentazione separata.
 
 ## Percorso professionale
