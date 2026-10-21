@@ -12,7 +12,6 @@ e modelli di **deep learning** in PyTorch per la previsione a breve termine dell
 [![CV IT](https://img.shields.io/badge/CV-ITALIANO-D93F0B?style=flat-square)](https://marcovallecs.github.io/assets/cv/Marco_Valle_CV_IT.pdf)
 [![CV EN](https://img.shields.io/badge/CV-ENGLISH-4B8BBE?style=flat-square)](https://marcovallecs.github.io/assets/cv/Marco_Valle_CV_EN.pdf)
 [![Email](https://img.shields.io/badge/Email-marco.valle2002@gmail.com-EA4335?style=flat-square)](mailto:marco.valle2002@gmail.com)
-[![Open to work](https://img.shields.io/badge/Open%20to%20work-Disponibile%20per%20nuove%20opportunit%C3%A0-3CB371?style=flat-square)](mailto:marco.valle2002@gmail.com)
 
 </div>
 
@@ -166,10 +165,6 @@ Per opportunità professionali o di collaborazione sono disponibile al seguente 
 ---
 
 <div align="center">
-
-*Le card di questo README sono generate con [github-readme-stats](https://github.com/anuraghazra/github-readme-stats),
-[github-profile-summary-cards](https://github.com/vn7n24fzkq/github-profile-summary-cards) e
-[github-readme-activity-graph](https://github.com/Ashutosh00710/github-readme-activity-graph).*
 
 © 2026 Marco Valle
 
